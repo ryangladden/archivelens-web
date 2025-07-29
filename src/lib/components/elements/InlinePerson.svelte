@@ -1,15 +1,25 @@
 <script lang="ts">
-    let { avatar = null, first_name, last_name } = $props()
-    let [first] = first_name
-    let [last] = last_name
-    let defaultAvatar = '<p class="h-7 w-7 rounded-full bg-red-500 flex justify-center items-center text-white">' + first + last +'</p>'
+	import Avatar from "./Avatar.svelte";
+
+    let { src = null, first_name = '', last_name = '', id } = $props()
+
+    const getFirstLetter = (word: string) => {
+        if (word === '' || word === null) {
+            return ''
+        }
+        return Array.from(word)[0]
+
+    }
+
+    let first: string = getFirstLetter(first_name)
+    let last: string = getFirstLetter(last_name)
+    
+    
 </script>
 
 <div class="flex flex-row gap-2">
-    {#if avatar}
-        <img src={avatar} />
-    {:else}
-        {@html defaultAvatar}
-    {/if}
-    <p class="inline">{first_name} {last_name}</p>
+    <a href="/persons/{id}">
+        <Avatar src={src} {first} {last}/>
+        <p class="inline">{first_name} {last_name}</p>
+    </a>
 </div>

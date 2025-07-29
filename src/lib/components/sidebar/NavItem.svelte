@@ -4,7 +4,7 @@
 </script>
 
 <a href={href}>
-<div class="hover:bg-orange-100 ease-in duration-200 rounded-l-none rounded-full p-2 flex flex-row">
+<div class="hover:bg-slate-200 ease-in duration-100 py-4 rounded-l-none rounded-full p-2 flex flex-row w-40">
     <Icon {icon} />
     <p>{label}</p>
 </div>

@@ -3,4 +3,5 @@
     let { data } = $props()
 </script>
 
+<button>button</button>
 <DocumentGrid documents={data.documents.documents} />

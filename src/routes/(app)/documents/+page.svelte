@@ -1,7 +1,13 @@
 <script lang="ts">
-    import DocumentGrid from "$lib/components/document-list/DocumentGrid.svelte";
-    let { data } = $props()
+    import DocumentsGrid from "$lib/components/card-grids/documents-grid.svelte";
+    import Separator from "$lib/components/ui/separator/separator.svelte";
+
+    const { data } = $props()
 </script>
 
-<button>button</button>
-<DocumentGrid documents={data.documents.documents} />
+<div>
+    <h1 class="font-semibold text-3xl p-4">Documents</h1>
+    <Separator orientation="horizontal" />
+    <div class="h-10"></div>
+    <DocumentsGrid documents={data.documentsPage.documents} />
+</div>

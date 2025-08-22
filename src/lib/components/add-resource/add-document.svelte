@@ -107,6 +107,7 @@
             <Sheet.Root>
                 <Sheet.Trigger class={cn(buttonVariants({ variant: "outline" }),)}>
                     <FilePlus2 strokeWidth=2.5 />
+                    <Label>New Document</Label>
                 </Sheet.Trigger>
                 <Sheet.Content class="w-sm">
                     <Sheet.Header>

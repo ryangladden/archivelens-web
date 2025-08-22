@@ -54,6 +54,7 @@
             <Sheet.Root>
                 <Sheet.Trigger class={cn(buttonVariants({ variant: "outline" }),)}>
                     <UserRoundPlus strokeWidth=2.5 />
+                    <Label>New Person</Label>
                 </Sheet.Trigger>
                 <Sheet.Content>
                     <Sheet.Header>

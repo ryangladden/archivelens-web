@@ -1,9 +1,10 @@
 <script lang="ts">
     import * as Sidebar from "$lib/components/ui/sidebar/index.js";
     import AppSidebar from "$lib/components/app-sidebar.svelte";
-    import Separator from "$lib/components/ui/separator/separator.svelte";
     import AddPersonSheet from "$lib/components/add-resource/add-person.svelte";
     import AddDocumentSheet from "$lib/components/add-resource/add-document.svelte";
+	import DarkToggle from "$lib/components/reusable/dark-toggle.svelte";
+    
 
     let { children } = $props();
 </script>
@@ -18,6 +19,7 @@
                 <div class="flex flex-row gap-3 mx-4">
                     <AddPersonSheet />
                     <AddDocumentSheet />
+                    <DarkToggle />
                 </div>
             </header>
                 <main class="flex-1">

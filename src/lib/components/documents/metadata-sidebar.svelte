@@ -2,7 +2,7 @@
   import * as Sidebar from "$lib/components/ui/sidebar/index.js";
     import { Calendar1, Map, UsersRound } from "@lucide/svelte";
 
-  let { document, open } = $props()
+  let { document } = $props()
 
       let longDate = {
         year: 'numeric',
@@ -13,7 +13,7 @@
 
 </script>
 
-<Sidebar.Root side="right" class="w-xs">
+<Sidebar.Root side="right">
     <Sidebar.Header>
         <Sidebar.Group>
             <span class="p-6"></span>

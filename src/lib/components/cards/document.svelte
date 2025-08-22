@@ -25,7 +25,7 @@
             <Card.Header class="pt-3">
                 <Card.Title class="text-xl">{title}</Card.Title>
                 <Separator orientation="horizontal" />
-                <Label class="text-gray-500 text-sm">{type} {date ? `• ${new Date(date).toLocaleDateString(undefined, longDate)}` : ''}</Label>
+                <Label class="text-gray-500 dark:text-gray-300 text-sm">{type} {date ? `• ${new Date(date).toLocaleDateString(undefined, longDate)}` : ''}</Label>
             </Card.Header>
             <div class="px-5 py-2 flex flex-row">
                 <!-- <Avatar.Root>

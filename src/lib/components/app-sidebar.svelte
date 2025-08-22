@@ -31,14 +31,14 @@
   <Sidebar.Header>
         <Sidebar.Menu>
             <Sidebar.MenuItem size="large">
-                    <Sidebar.MenuButton size="large">
-                        {#snippet child({ props })}
-                            <a href="/documents" class="flex flex-row items-center h-16 w-xl" {...props}>
-                                <img height="100px" src={brand} alt="Archive Lens" class="h-16 flex-shrink-0"/>
-                                <span class="font-mono font-semibold text-xl mb-2 text-red-800 p-0 m-0">rchive Lens</span>
+                <Sidebar.MenuButton size="large">
+                    {#snippet child({ props })}
+                            <a href="/documents" class="flex flex-row items-center h-16 gap-0" {...props}>
+                                <img src={brand} alt="Archive Lens" class="h-16 flex-shrink-0"/>
+                                <p class="font-mono font-semibold text-xl mb-2 text-red-800 dark:text-slate-200">rchive Lens</p>
                             </a>
-                        {/snippet}
-                    </Sidebar.MenuButton>
+                    {/snippet}
+                </Sidebar.MenuButton>
             </Sidebar.MenuItem>
         </Sidebar.Menu>
   </Sidebar.Header>
